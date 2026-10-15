@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Wayfinder Travel
+        </title>
+        <style>
+            header {
+                background-color: #2c4a3e;
+                padding: 15px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 99;
+            }
+            .Logo{
+               display: flex;
+               align-items: center;
+               gap:  10px;
+            }
+            .Logo span{
+                font-family:"Gaorgia", serif;
+                font-size:30px;
+                color: #e2f0d9;
+                letter-spacing: 1px;
+            }
+            /*nav links*/
+            header ul{
+                display: flex;
+                list-style:  none;
+                gap: 25px;
+                padding:0;
+                margin: 0;
+            }
+            header ul li a {
+                text-decoration:none;
+                color:#e2f0d9;
+                font-size: 16px;
+                font-weight: 500;
+                gap:30px;
+                margin-right: auto;
+                
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            .search-container {
+                display:flex;
+                align-items: center;
+                background-color:#e2f0d9; 
+                border-radius: 20px;
+                padding: 6px 15px;
+                gap: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            .search-container input{
+                border: none;
+                outline: none;
+                background: transparent;
+                width:240px;
+                font-size:14px;
+                color: #333;
+            }
+            .btn{
+                padding: 8px 16px;
+                border-radius: 20px;
+                border: none;
+                background-color:#2c4a3e;
+                color: #e2f0d9;
+                font-family:"Gaorgia", serif;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+            .btn:hover{
+                background-color:#3b6354;
+            }
+            /*Section home*/
+            .home{
+                background-image: url('background9.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                padding: 0 1px;
+                display:flex;
+                height:80vh;
+                align-items:center;
+                padding: 0 40px;
+                position: relative;
+            }
+            .socialIcons{
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+                position: absolute;
+                left:30px;
+            }
+            .socialIcons a img{
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: rgba(44, 74, 62, 0.8);
+                color:#e2f0d9;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            /*text area*/
+            .home-text{
+                margin-left:60px;
+                max-width:900px; 
+            }
+            .title-box{
+                border: none;
+                padding:15px 20px;
+                background-color: rgba(0, 0, 0, 0.2);
+                margin-bottom:20px;
+            }
+            .title-box h1{
+                font-family:"Georgia", serif;
+                color:#e2f0d9;
+                font-size:36px;
+                margin:0;
+                letter-spacing:2px;
+            }
+            /*discription*/
+            .discription-box{
+                border:none;
+                padding:15px 20px;
+                background-color: rgba(0, 0, 0, 0.2);
+                margin-bottom:20px;
+            }
+            .discription-box p{
+                font-family:"Georgia", serif;
+                color:#e2f0d9;
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0;
+            }
+            .team-member{}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="Logo">
+                <img src="WayfinderLogo.png" alt="Damn logo!" style="width: 80px; height: 80px; vertical-align: middle; margin-right:8px;"/>
+                <h1 style="color: #e2f0d9;">Wayfinder Travel</h1>
+            </div>
+            <!--center part-->
+            <nav>
+                <ul>
+                    <li><a href="travel_recommendation.html">Home</a></li>
+                    <li><a id="AboutUs">About Us</a></li>
+                    <li><a id="contactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <div></div>
+            </nav>
+            <nav>
+                <div></div>
+            </nav>
+        </header>
+
+        <section id="Home" class="home">
+            <!--Vertical social media icons-->
+            <div class="socialIcons">
+                <a href="#"><img src="X.jpg"/></a><br/>
+                <a href="#"><img src="facebook.png" /></a><br/>
+                <a href="#"><img src="insta.png" /></a><br/>
+                <a href="#"><img src="youtube.png" /></a><br/>
+            </div>
+            <!--Heading and paragraph-->
+            <div class="home-text">
+                <div class= "title-box">
+                    <h1>ABOUT US</h1>
+                </div>
+                <div class="discription-box">
+                    <p>Welcome to Wayfinder Travel, your digital gateway to enchanting woodland castles, hidden forest trails, and mythical landscapes. 
+                        Our interactive discovery platform helps wanderers uncover breathtaking destinations, secret architectural ruins, and timeless natural retreats.
+                    </p>
+                </div>
+                <div class="discription-box">
+                    <h2 style="color: #e2f0d9; font-family:'Georgia', serif; margin-top: 0; letter-spacing: 1px;"> OUR TEAM</h2>
+                    <div style="display: flex; justify-content: space-around; gap:20px; text-align:center; margin-top:15px;">
+                        <div class="team-member">
+                            <h3 style="color: #ffffff; font-size:16px; margin-bottom:5px;">Elianora Vance</h3>
+                            <p style="color: #e2f0d9; font-size:13px; margin:0;"> Lead Cartographer</p>
+                        </div>
+                        <div class="team-member">
+                            <h3 style="color: #ffffff; font-size:16px; margin-bottom:5px;">Kaelen Thorne</h3>
+                            <p style="color: #e2f0d9; font-size:13px; margin:0;">Pathfinder & lore Master</p>
+                        </div>
+                        <div class="team-member">
+                            <h3 style="color: #ffffff; font-size:16px; margin-bottom:5px;">Lyra Sunwhisper</h3>
+                            <p style="color: #e2f0d9; font-size:13px; margin:0;"> Botanical Explorer</p>
+                        </div>
+
+            </div>
+        </section>
+        </body>
+</html>
